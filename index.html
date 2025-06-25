@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaaSify - Marketing Made Smarter</title>
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Main Favicon (Modern Browsers) -->
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <!-- Fallback for older browsers -->
+    <link rel="alternate icon" href="/favicon.ico">
+
+    <!-- Apple Touch Icon (for iPhones and iPads) -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <!-- Web App Manifest (for Android and PWA functionality) -->
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Custom JavaScript (defer ensures it runs after HTML is parsed) -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- 1. Navigation & Header -->
+    <header class="main-header">
+        <nav class="container">
+            <a href="#" class="logo">SaaSify</a>
+            <div class="nav-menu-wrapper">
+                <ul class="nav-menu">
+                    <li><a href="#hero" class="nav-link active-link">Home</a></li>
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#blog" class="nav-link">Blog</a></li>
+                    <li><a href="#contact" class="nav-link contact-button">Contact Us</a></li>
+                </ul>
+            </div>
+            <button id="menu-toggle" aria-label="Open Navigation Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ====================================================== -->
+        <!-- START: ULTIMATE ELEGANCE HERO SECTION                  -->
+        <!-- ====================================================== -->
+        <section id="hero" class="scroll-section">
+            <!-- Background Elements -->
+            <div class="hero-background-pattern"></div>
+            <div class="hero-gradient-overlay"></div>
+
+            <!-- The new graphics container for parallax effect -->
+            <div class="hero-graphics-container">
+                <!-- Main Dashboard Card (Centerpiece) -->
+                <div class="graphic-element main-dashboard-card" data-depth="0.2">
+                    <div class="dashboard-header">
+                        <span>Dashboard</span>
+                        <div class="user-pills">
+                            <img src="https://i.pravatar.cc/20?img=1" alt="user avatar">
+                            <img src="https://i.pravatar.cc/20?img=2" alt="user avatar">
+                            <span>+3</span>
+                        </div>
+                    </div>
+                    <div class="dashboard-chart">
+                        <svg viewBox="0 0 100 40" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M 0 30 C 20 10, 40 10, 60 25 S 80 40, 100 20" fill="none"
+                                stroke="url(#chart-gradient)" stroke-width="2" stroke-linecap="round" />
+                            <defs>
+                                <linearGradient id="chart-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" stop-color="var(--accent-violet)" />
+                                    <stop offset="100%" stop-color="var(--accent-blue)" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="dashboard-stat"><span>Conversion Rate</span><strong>+12.5%</strong></div>
+                </div>
+
+                <!-- Satellite Graphics -->
+                <div class="graphic-element floating-orb orb-1" data-depth="0.4"></div>
+                <div class="graphic-element floating-orb orb-2" data-depth="0.15"></div>
+                <div class="graphic-element progress-card" data-depth="0.3">
+                    <span>Syncing...</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                </div>
+                <div class="graphic-element check-card" data-depth="0.1">
+                    <i class="fas fa-check"></i>
+                </div>
+            </div>
+
+            <!-- Main Text Content -->
+            <div class="hero-content">
+                <h1 class="reveal-item">Marketing Made Smarter</h1>
+                <p class="reveal-item">Powerful, easy-to-use SaaS solutions designed to help you grow</p>
+                <a href="#" class="cta-button elegant-cta reveal-item">Get Started for Free</a>
+            </div>
+        </section>
+        <!-- ====================================================== -->
+        <!-- END: ULTIMATE ELEGANCE HERO SECTION                    -->
+        <!-- ====================================================== -->
+
+        <!-- ====================================================== -->
+        <!-- START: REPLACEMENT FOR FEATURES SECTION                -->
+        <!-- ====================================================== -->
+        <section id="features" class="container scroll-section">
+            <div class="section-title reveal-item">
+                <h3>Our Features</h3>
+                <h2>Everything You Need, All in One Place</h2>
+            </div>
+
+            <div class="features-showcase-grid">
+                <!-- Left Side: Clickable Feature List -->
+                <div class="features-list">
+                    <button class="feature-item active" data-feature="chat">
+                        <i class="fas fa-comments"></i>
+                        <div>
+                            <h4>Live Chat & Engagement</h4>
+                            <p>Connect with visitors in real-time to drive sales.</p>
+                        </div>
+                    </button>
+                    <button class="feature-item" data-feature="payment">
+                        <i class="fas fa-shield-alt"></i>
+                        <div>
+                            <h4>Secured Payments</h4>
+                            <p>Integrate a fast and secure checkout experience.</p>
+                        </div>
+                    </button>
+                    <button class="feature-item" data-feature="feedback">
+                        <i class="fas fa-star"></i>
+                        <div>
+                            <h4>Customer Feedback</h4>
+                            <p>Collect reviews and build powerful social proof.</p>
+                        </div>
+                    </button>
+                    <button class="feature-item" data-feature="analytics">
+                        <i class="fas fa-chart-line"></i>
+                        <div>
+                            <h4>Advanced Analytics</h4>
+                            <p>Track your performance with beautiful data reports.</p>
+                        </div>
+                    </button>
+                </div>
+
+                <!-- Right Side: Dynamic Visual Preview -->
+                <div class="feature-preview-panel">
+                    <!-- Preview for Live Chat -->
+                    <div class="feature-preview-item visible" id="feature-preview-chat">
+                        <div class="browser-mockup">
+                            <div class="browser-header"><span></span><span></span><span></span></div>
+                            <div class="browser-content chat-preview-animated">
+                                <div class="chat-bubble-animated agent">Hello! How can we help you today?</div>
+                                <div class="chat-bubble-animated user">I'm interested in the Business plan...</div>
+                                <div class="chat-bubble-animated agent typing"><span></span><span></span><span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Preview for Secured Payment -->
+                    <div class="feature-preview-item" id="feature-preview-payment">
+                        <div class="browser-mockup">
+                            <div class="browser-header"><span></span><span></span><span></span></div>
+                            <div class="browser-content payment-preview-animated">
+                                <i class="fas fa-shield-alt payment-icon"></i>
+                                <h3>Payment Confirmed</h3>
+                                <p>$99.00 has been successfully charged.</p>
+                                <div class="receipt-id">Transaction ID: #A4B2C1-2024</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Preview for Customer Feedback -->
+                    <div class="feature-preview-item" id="feature-preview-feedback">
+                        <div class="browser-mockup">
+                            <div class="browser-header"><span></span><span></span><span></span></div>
+                            <div class="browser-content feedback-preview-animated">
+                                <img src="https://i.pravatar.cc/80?img=1" alt="User Avatar">
+                                <h4>"A total game-changer!"</h4>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <p class="author">- Jane Doe, CEO of ExampleCo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Preview for Analytics -->
+                    <div class="feature-preview-item" id="feature-preview-analytics">
+                        <div class="browser-mockup">
+                            <div class="browser-header"><span></span><span></span><span></span></div>
+                            <div class="browser-content analytics-preview-animated">
+                                <h4>Monthly Visitors</h4>
+                                <div class="chart">
+                                    <div class="chart-bar" style="height: 30%;"><span>Jan</span></div>
+                                    <div class="chart-bar" style="height: 50%;"><span>Feb</span></div>
+                                    <div class="chart-bar" style="height: 45%;"><span>Mar</span></div>
+                                    <div class="chart-bar" style="height: 75%;"><span>Apr</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ====================================================== -->
+        <!-- END: REPLACEMENT FOR FEATURES SECTION                  -->
+        <!-- ====================================================== -->
+
+
+        <!-- ====================================================== -->
+        <!-- START: REPLACEMENT FOR PRICING SECTION                 -->
+        <!-- ====================================================== -->
+        <section id="pricing" class="container scroll-section">
+            <div class="section-title reveal-item">
+                <h3>Pricing Plans</h3>
+                <h2>Flexible Plans for Teams of All Sizes</h2>
+            </div>
+
+            <!-- Pricing Toggle Switch -->
+            <div class="pricing-toggle-container reveal-item">
+                <span>Monthly</span>
+                <label class="pricing-toggle">
+                    <input type="checkbox" id="pricing-switch">
+                    <span class="slider"></span>
+                </label>
+                <span>
+                    Yearly <span class="save-badge">Save 20%</span>
+                </span>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Plan 1: Starter -->
+                <div class="pricing-card reveal-item">
+                    <div class="plan-header">
+                        <i class="fas fa-user"></i>
+                        <h4>Starter</h4>
+                    </div>
+                    <p class="plan-description">For individuals and small teams getting started.</p>
+                    <div class="plan-price" data-monthly="29" data-yearly="23">
+                        <sup>$</sup><span class="price-value">29</span><span>/mo</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> 5 Projects</li>
+                        <li><i class="fas fa-check"></i> Basic Analytics</li>
+                        <li><i class="fas fa-check"></i> 24/7 Email Support</li>
+                        <li><i class="fas fa-times"></i> Live Chat Integration</li>
+                    </ul>
+                    <a href="#" class="plan-button">Choose Plan</a>
+                </div>
+
+                <!-- Plan 2: Business (Popular) -->
+                <div class="pricing-card popular reveal-item">
+                    <div class="plan-header">
+                        <i class="fas fa-briefcase"></i>
+                        <h4>Business</h4>
+                    </div>
+                    <p class="plan-description">For growing businesses that need more power and scale.</p>
+                    <div class="plan-price" data-monthly="99" data-yearly="79">
+                        <sup>$</sup><span class="price-value">99</span><span>/mo</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> 50 Projects</li>
+                        <li><i class="fas fa-check"></i> Advanced Analytics</li>
+                        <li><i class="fas fa-check"></i> Priority Phone & Email Support</li>
+                        <li><i class="fas fa-check"></i> Live Chat Integration</li>
+                    </ul>
+                    <a href="#" class="plan-button popular-button">Choose Plan</a>
+                </div>
+
+                <!-- Plan 3: Enterprise -->
+                <div class="pricing-card reveal-item">
+                    <div class="plan-header">
+                        <i class="fas fa-building"></i>
+                        <h4>Enterprise</h4>
+                    </div>
+                    <p class="plan-description">For large organizations with custom requirements.</p>
+                    <div class="plan-price custom">
+                        <span class="price-value">Custom</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Unlimited Projects</li>
+                        <li><i class="fas fa-check"></i> Custom Reporting</li>
+                        <li><i class="fas fa-check"></i> Dedicated Account Manager</li>
+                        <li><i class="fas fa-check"></i> API Access & SSO</li>
+                    </ul>
+                    <a href="#" class="plan-button">Contact Us</a>
+                </div>
+            </div>
+        </section>
+        <!-- ====================================================== -->
+        <!-- END: REPLACEMENT FOR PRICING SECTION                   -->
+        <!-- ====================================================== -->
+
+        <!-- ====================================================== -->
+        <!-- START: REPLACEMENT FOR ABOUT SECTION                   -->
+        <!-- ====================================================== -->
+        <section id="about" class="scroll-section">
+            <div class="container">
+                <!-- Part 1: The Core Story -->
+                <div class="about-hero-grid">
+                    <div class="about-content reveal-item">
+                        <div class="section-title" style="text-align: left; margin-bottom: 2rem;">
+                            <h3>Our Story</h3>
+                            <h2>Crafted for Marketers, by Marketers</h2>
+                        </div>
+                        <p>We started SaaSify because we were tired of clunky, overpriced marketing tools that were
+                            difficult to use. Our mission is to provide powerful, intuitive, and affordable solutions
+                            that help businesses of all sizes succeed.</p>
+                        <p>Our team is composed of passionate developers, designers, and marketers dedicated to crafting
+                            the best possible experience for our users.</p>
+                    </div>
+                    <div class="about-image-composition reveal-item">
+                        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+                            alt="Team collaborating in a modern office" class="about-image-back">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+                            alt="Close-up of a strategy session" class="about-image-front">
+                    </div>
+                </div>
+
+                <!-- Part 2: Core Values -->
+                <div class="about-values-grid">
+                    <div class="value-card reveal-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <h4>Innovation</h4>
+                        <p>We constantly push the boundaries of technology to deliver cutting-edge features.</p>
+                    </div>
+                    <div class="value-card reveal-item">
+                        <i class="fas fa-users"></i>
+                        <h4>Customer-Centric</h4>
+                        <p>Our customers are at the heart of everything we do. Your success is our success.</p>
+                    </div>
+                    <div class="value-card reveal-item">
+                        <i class="fas fa-handshake"></i>
+                        <h4>Integrity</h4>
+                        <p>We believe in transparent pricing, honest communication, and ethical practices.</p>
+                    </div>
+                </div>
+
+                <!-- Part 3: The Team -->
+                <div class="about-team-section reveal-item">
+                    <h3 class="team-title">Meet the Innovators</h3>
+                    <div class="team-grid">
+                        <div class="team-member-card">
+                            <img src="https://i.pravatar.cc/150?img=68" alt="Team Member Person1">
+                            <h5>Jane Doe</h5>
+                            <span>Founder & CEO</span>
+                        </div>
+                        <div class="team-member-card">
+                            <img src="https://i.pravatar.cc/150?img=60" alt="Team Member Person2">
+                            <h5>John Smith</h5>
+                            <span>Chief Technology Officer</span>
+                        </div>
+                        <div class="team-member-card">
+                            <img src="https://i.pravatar.cc/150?img=32" alt="Team Member Person3">
+                            <h5>Emily White</h5>
+                            <span>Head of Product</span>
+                        </div>
+                        <div class="team-member-card">
+                            <img src="https://i.pravatar.cc/150?img=14" alt="Team Member Person4">
+                            <h5>Michael Brown</h5>
+                            <span>Lead Marketing Strategist</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ====================================================== -->
+        <!-- END: REPLACEMENT FOR ABOUT SECTION                     -->
+        <!-- ====================================================== -->
+
+        <!-- NEW: Blog Section -->
+        <section id="blog" class="container scroll-section">
+            <div class="section-title reveal-item">
+                <h3>From Our Blog</h3>
+                <h2>Insights and Ideas for Growth</h2>
+            </div>
+            <div class="blog-grid">
+                <!-- Blog Card 1 -->
+                <div class="blog-card reveal-item">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8ZGF0YSxhbmFseXRpY3MsZGFzaGJvYXJk&ixlib=rb-4.0.3&q=80&w=1080"
+                        alt="Data analytics dashboard" class="blog-card-image">
+                    <div class="blog-card-content">
+                        <span class="blog-category" style="background-color: var(--accent-blue);">Analytics</span>
+                        <h4>5 Ways to Boost Your ROI with Data</h4>
+                        <p class="blog-excerpt">Discover how leveraging your data can lead to smarter decisions and a
+                            better return on investment...</p>
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar-alt"></i> Oct 24, 2024</span>
+                            <a href="#" class="explore-link">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog Card 2 -->
+                <div class="blog-card reveal-item">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8c2VvLG1hcmtldGluZyxzdHJhdGVneQ&ixlib=rb-4.0.3&q=80&w=1080"
+                        alt="Team working on SEO strategy" class="blog-card-image">
+                    <div class="blog-card-content">
+                        <span class="blog-category" style="background-color: var(--accent-violet);">SEO</span>
+                        <h4>The Ultimate SEO Checklist for 2024</h4>
+                        <p class="blog-excerpt">Stay ahead of the competition with our comprehensive checklist for
+                            on-page and off-page SEO...</p>
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar-alt"></i> Oct 18, 2024</span>
+                            <a href="#" class="explore-link">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog Card 3 -->
+                <div class="blog-card reveal-item">
+                    <!-- FIXED: The src URL has been replaced with a working image link -->
+                    <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+                        alt="A team collaborating and reviewing feedback on a laptop" class="blog-card-image">
+                    <div class="blog-card-content">
+                        <span class="blog-category" style="background-color: var(--accent-magenta);">Customer
+                            Success</span>
+                        <h4>How to Turn Customer Feedback into Features</h4>
+                        <p class="blog-excerpt">Learn the art of listening to your users and transforming their feedback
+                            into product improvements...</p>
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar-alt"></i> Oct 12, 2024</span>
+                            <a href="#" class="explore-link">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEW: Contact Section -->
+        <section id="contact" class="container scroll-section">
+            <div class="contact-grid">
+                <div class="contact-info reveal-item">
+                    <div class="section-title" style="text-align: left; margin-bottom: 2rem;">
+                        <h3>Get In Touch</h3>
+                        <h2>Let's Build Something Great Together</h2>
+                    </div>
+                    <p>Have a question or a project in mind? Fill out the form, and we'll get back to you as soon as
+                        possible.</p>
+                    <ul class="contact-details">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Tech Avenue, Silicon Valley, CA</li>
+                        <li><i class="fas fa-envelope"></i> hello@saasify.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                    </ul>
+                </div>
+
+                <form class="contact-form reveal-item">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required placeholder=" ">
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required placeholder=" ">
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" required placeholder=" ">
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- ====================================================== -->
+    <!-- START: REPLACEMENT FOR FOOTER SECTION                  -->
+    <!-- ====================================================== -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Column 1: Brand & Mission -->
+                <div class="footer-column brand-column">
+                    <a href="#" class="logo">SaaSify</a>
+                    <p>Marketing Made Smarter. Our mission is to empower businesses with intuitive and powerful tools
+                        for growth.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Product Links -->
+                <div class="footer-column">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#">Integrations</a></li>
+                        <li><a href="#">Changelog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Company Links -->
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Newsletter Signup -->
+                <div class="footer-column">
+                    <h4>Stay Updated</h4>
+                    <p>Get the latest product updates, articles, and resources, sent to your inbox weekly.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" aria-label="Subscribe to newsletter">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2024 SaaSify. All rights reserved.</p>
+                <p class="made-with-love">Made with <i class="fas fa-heart"></i> in California</p>
+            </div>
+        </div>
+    </footer>
+    <!-- ====================================================== -->
+    <!-- END: REPLACEMENT FOR FOOTER SECTION                    -->
+    <!-- ====================================================== -->
+
+</body>
+
+</html>
